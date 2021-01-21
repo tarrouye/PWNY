@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		033CAADB7881AE09BB374259 /* libPods-Pwny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0D35C4143955738DCD3780 /* libPods-Pwny.a */; };
 		311B14DE25B94E8D005AA457 /* RimmedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14DD25B94E8D005AA457 /* RimmedRectButton.swift */; };
-		311B14E125B96E03005AA457 /* QueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14E025B96E03005AA457 /* QueryManager.swift */; };
 		311B14E425B97A56005AA457 /* Breach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14E325B97A56005AA457 /* Breach.swift */; };
 		311B14E725B97B43005AA457 /* BreachCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14E625B97B43005AA457 /* BreachCache.swift */; };
 		311B14EA25B97C63005AA457 /* FoundBreachesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14E925B97C63005AA457 /* FoundBreachesView.swift */; };
@@ -40,6 +39,7 @@
 		31AA376225BA1C79001078EE /* PasswordResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA376125BA1C79001078EE /* PasswordResultView.swift */; };
 		31AA376425BA2299001078EE /* NetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA376325BA2299001078EE /* NetworkErrorView.swift */; };
 		31AA376D25BA3D8D001078EE /* APIKEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA376C25BA3D8D001078EE /* APIKEY.swift */; };
+		31AA377B25BA4244001078EE /* HIBPQueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA377A25BA4244001078EE /* HIBPQueryManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +103,6 @@
 
 /* Begin PBXFileReference section */
 		311B14DD25B94E8D005AA457 /* RimmedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimmedRectButton.swift; sourceTree = "<group>"; };
-		311B14E025B96E03005AA457 /* QueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryManager.swift; sourceTree = "<group>"; };
 		311B14E325B97A56005AA457 /* Breach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breach.swift; sourceTree = "<group>"; };
 		311B14E625B97B43005AA457 /* BreachCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachCache.swift; sourceTree = "<group>"; };
 		311B14E925B97C63005AA457 /* FoundBreachesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundBreachesView.swift; sourceTree = "<group>"; };
@@ -137,6 +136,7 @@
 		31AA376125BA1C79001078EE /* PasswordResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResultView.swift; sourceTree = "<group>"; };
 		31AA376325BA2299001078EE /* NetworkErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorView.swift; sourceTree = "<group>"; };
 		31AA376C25BA3D8D001078EE /* APIKEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEY.swift; sourceTree = "<group>"; };
+		31AA377A25BA4244001078EE /* HIBPQueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIBPQueryManager.swift; sourceTree = "<group>"; };
 		3D0D35C4143955738DCD3780 /* libPods-Pwny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pwny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71835F1FD677B3795D9F52C1 /* Pods-Pwny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pwny.release.xcconfig"; path = "Target Support Files/Pods-Pwny/Pods-Pwny.release.xcconfig"; sourceTree = "<group>"; };
 		F361E52F28192FF7F1D0EF06 /* Pods-Pwny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pwny.debug.xcconfig"; path = "Target Support Files/Pods-Pwny/Pods-Pwny.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,7 +184,6 @@
 				317989CB25B947F2003894E0 /* AccountHackView.swift */,
 				31AA373E25B9E1F1001078EE /* Paste.swift */,
 				317989CE25B947FD003894E0 /* PasswordHackView.swift */,
-				311B14E025B96E03005AA457 /* QueryManager.swift */,
 				31AA376C25BA3D8D001078EE /* APIKEY.swift */,
 				311B14E925B97C63005AA457 /* FoundBreachesView.swift */,
 				31AA375925B9F104001078EE /* FoundPastesView.swift */,
@@ -204,6 +203,7 @@
 				311B14EF25B98E2E005AA457 /* ImageCache.swift */,
 				311B14F225B993E4005AA457 /* ImageLoader.swift */,
 				311B14F525B9946E005AA457 /* URLImage.swift */,
+				31AA377A25BA4244001078EE /* HIBPQueryManager.swift */,
 				317989B725B94712003894E0 /* Assets.xcassets */,
 				317989C125B94712003894E0 /* Info.plist */,
 				317989BE25B94712003894E0 /* Pwny.xcdatamodeld */,
@@ -418,7 +418,7 @@
 				31AA373B25B9C455001078EE /* BackgroundBlurView.swift in Sources */,
 				311B14E425B97A56005AA457 /* Breach.swift in Sources */,
 				31AA376225BA1C79001078EE /* PasswordResultView.swift in Sources */,
-				311B14E125B96E03005AA457 /* QueryManager.swift in Sources */,
+				31AA377B25BA4244001078EE /* HIBPQueryManager.swift in Sources */,
 				31AA373D25B9CF17001078EE /* PassHashResult.swift in Sources */,
 				31AA375E25BA0FE7001078EE /* PillButton.swift in Sources */,
 				317989CC25B947F2003894E0 /* AccountHackView.swift in Sources */,
