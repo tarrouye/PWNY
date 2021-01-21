@@ -27,7 +27,7 @@ struct AllBreachesView: View {
     
     var body: some View {
         ZStack {
-            if (self.error != nil) {
+            if (self.error == nil) {
                 ScrollView(.vertical) {
                     LazyVStack {
                         HStack() {
