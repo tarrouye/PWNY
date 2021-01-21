@@ -7,23 +7,149 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311B14DE25B94E8D005AA457 /* RimmedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14DD25B94E8D005AA457 /* RimmedRectButton.swift */; };
+		311B14E125B96E03005AA457 /* QueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14E025B96E03005AA457 /* QueryManager.swift */; };
+		311B14E425B97A56005AA457 /* Breach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14E325B97A56005AA457 /* Breach.swift */; };
+		311B14E725B97B43005AA457 /* BreachCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14E625B97B43005AA457 /* BreachCache.swift */; };
+		311B14EA25B97C63005AA457 /* FoundBreachesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14E925B97C63005AA457 /* FoundBreachesView.swift */; };
+		311B14ED25B98150005AA457 /* BreachCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14EC25B98150005AA457 /* BreachCard.swift */; };
+		311B14F025B98E2E005AA457 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14EF25B98E2E005AA457 /* ImageCache.swift */; };
+		311B14F325B993E4005AA457 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14F225B993E4005AA457 /* ImageLoader.swift */; };
+		311B14F625B9946F005AA457 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311B14F525B9946E005AA457 /* URLImage.swift */; };
 		317989B425B9470B003894E0 /* PwnyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317989B325B9470B003894E0 /* PwnyApp.swift */; };
-		317989B625B9470B003894E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317989B525B9470B003894E0 /* ContentView.swift */; };
 		317989B825B94712003894E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317989B725B94712003894E0 /* Assets.xcassets */; };
 		317989BB25B94712003894E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317989BA25B94712003894E0 /* Preview Assets.xcassets */; };
-		317989BD25B94712003894E0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317989BC25B94712003894E0 /* Persistence.swift */; };
 		317989C025B94712003894E0 /* Pwny.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 317989BE25B94712003894E0 /* Pwny.xcdatamodeld */; };
+		317989C925B94748003894E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317989C825B94748003894E0 /* HomeView.swift */; };
+		317989CC25B947F2003894E0 /* AccountHackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317989CB25B947F2003894E0 /* AccountHackView.swift */; };
+		317989CF25B947FD003894E0 /* PasswordHackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317989CE25B947FD003894E0 /* PasswordHackView.swift */; };
+		31AA370625B99E08001078EE /* AllBreachesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA370525B99E07001078EE /* AllBreachesView.swift */; };
+		31AA370A25B9A264001078EE /* BreachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA370925B9A264001078EE /* BreachView.swift */; };
+		31AA373525B9BD47001078EE /* AttributedLabelWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA373425B9BD47001078EE /* AttributedLabelWrapper.swift */; };
+		31AA373725B9BF64001078EE /* Atributika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AA372025B9BC76001078EE /* Atributika.framework */; };
+		31AA373825B9BF64001078EE /* Atributika.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31AA372025B9BC76001078EE /* Atributika.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31AA373B25B9C455001078EE /* BackgroundBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA373A25B9C455001078EE /* BackgroundBlurView.swift */; };
+		31AA373D25B9CF17001078EE /* PassHashResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA373C25B9CF17001078EE /* PassHashResult.swift */; };
+		31AA373F25B9E1F1001078EE /* Paste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA373E25B9E1F1001078EE /* Paste.swift */; };
+		31AA375425B9E265001078EE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA375325B9E265001078EE /* Utils.swift */; };
+		31AA375625B9EA57001078EE /* PasteCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA375525B9EA57001078EE /* PasteCache.swift */; };
+		31AA375825B9EE19001078EE /* PasteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA375725B9EE19001078EE /* PasteCard.swift */; };
+		31AA375A25B9F104001078EE /* FoundPastesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA375925B9F104001078EE /* FoundPastesView.swift */; };
+		31AA375C25BA0B8D001078EE /* ExplainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA375B25BA0B8D001078EE /* ExplainerView.swift */; };
+		31AA375E25BA0FE7001078EE /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA375D25BA0FE7001078EE /* PillButton.swift */; };
+		31AA376025BA1580001078EE /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA375F25BA1580001078EE /* InfoCard.swift */; };
+		31AA376225BA1C79001078EE /* PasswordResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA376125BA1C79001078EE /* PasswordResultView.swift */; };
+		31AA376425BA2299001078EE /* NetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA376325BA2299001078EE /* NetworkErrorView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		31AA371F25B9BC76001078EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D97C1BEFF229002C0205;
+			remoteInfo = "Atributika-iOS";
+		};
+		31AA372125B9BC76001078EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6DA0F1BF000BD002C0205;
+			remoteInfo = "Atributika-macOS";
+		};
+		31AA372325B9BC76001078EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D9E21BEFFF6E002C0205;
+			remoteInfo = "Atributika-watchOS";
+		};
+		31AA372525B9BC76001078EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D9F01BEFFFBE002C0205;
+			remoteInfo = "Atributika-tvOS";
+		};
+		31AA372725B9BC76001078EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D9861BEFF229002C0205;
+			remoteInfo = "Atributika-iOS Tests";
+		};
+		31AA372925B9BC76001078EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD75027A1C68FCFC006590AF;
+			remoteInfo = "Atributika-macOS Tests";
+		};
+		31AA372B25B9BC76001078EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DD75028D1C690C7A006590AF;
+			remoteInfo = "Atributika-tvOS Tests";
+		};
+		31AA372D25B9BC76001078EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1B2F838D1E5C98A4009AFBCA;
+			remoteInfo = Demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		31AA373925B9BF64001078EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31AA373825B9BF64001078EE /* Atributika.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		311B14DD25B94E8D005AA457 /* RimmedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RimmedRectButton.swift; sourceTree = "<group>"; };
+		311B14E025B96E03005AA457 /* QueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryManager.swift; sourceTree = "<group>"; };
+		311B14E325B97A56005AA457 /* Breach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breach.swift; sourceTree = "<group>"; };
+		311B14E625B97B43005AA457 /* BreachCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachCache.swift; sourceTree = "<group>"; };
+		311B14E925B97C63005AA457 /* FoundBreachesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundBreachesView.swift; sourceTree = "<group>"; };
+		311B14EC25B98150005AA457 /* BreachCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachCard.swift; sourceTree = "<group>"; };
+		311B14EF25B98E2E005AA457 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		311B14F225B993E4005AA457 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		311B14F525B9946E005AA457 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		317989B025B9470B003894E0 /* Pwny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pwny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		317989B325B9470B003894E0 /* PwnyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwnyApp.swift; sourceTree = "<group>"; };
-		317989B525B9470B003894E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		317989B725B94712003894E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317989BA25B94712003894E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		317989BC25B94712003894E0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		317989BF25B94712003894E0 /* Pwny.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pwny.xcdatamodel; sourceTree = "<group>"; };
 		317989C125B94712003894E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317989C825B94748003894E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		317989CB25B947F2003894E0 /* AccountHackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHackView.swift; sourceTree = "<group>"; };
+		317989CE25B947FD003894E0 /* PasswordHackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordHackView.swift; sourceTree = "<group>"; };
+		31AA370525B99E07001078EE /* AllBreachesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBreachesView.swift; sourceTree = "<group>"; };
+		31AA370925B9A264001078EE /* BreachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreachView.swift; sourceTree = "<group>"; };
+		31AA371425B9BC76001078EE /* Atributika.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Atributika.xcodeproj; path = Atributika/Atributika.xcodeproj; sourceTree = SOURCE_ROOT; };
+		31AA373425B9BD47001078EE /* AttributedLabelWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedLabelWrapper.swift; sourceTree = "<group>"; };
+		31AA373A25B9C455001078EE /* BackgroundBlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundBlurView.swift; sourceTree = "<group>"; };
+		31AA373C25B9CF17001078EE /* PassHashResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassHashResult.swift; sourceTree = "<group>"; };
+		31AA373E25B9E1F1001078EE /* Paste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paste.swift; sourceTree = "<group>"; };
+		31AA375325B9E265001078EE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		31AA375525B9EA57001078EE /* PasteCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteCache.swift; sourceTree = "<group>"; };
+		31AA375725B9EE19001078EE /* PasteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteCard.swift; sourceTree = "<group>"; };
+		31AA375925B9F104001078EE /* FoundPastesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundPastesView.swift; sourceTree = "<group>"; };
+		31AA375B25BA0B8D001078EE /* ExplainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainerView.swift; sourceTree = "<group>"; };
+		31AA375D25BA0FE7001078EE /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
+		31AA375F25BA1580001078EE /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
+		31AA376125BA1C79001078EE /* PasswordResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResultView.swift; sourceTree = "<group>"; };
+		31AA376325BA2299001078EE /* NetworkErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31AA373725B9BF64001078EE /* Atributika.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +169,7 @@
 			children = (
 				317989B225B9470B003894E0 /* Pwny */,
 				317989B125B9470B003894E0 /* Products */,
+				31AA373025B9BCA6001078EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +185,34 @@
 			isa = PBXGroup;
 			children = (
 				317989B325B9470B003894E0 /* PwnyApp.swift */,
-				317989B525B9470B003894E0 /* ContentView.swift */,
+				311B14DD25B94E8D005AA457 /* RimmedRectButton.swift */,
+				31AA375B25BA0B8D001078EE /* ExplainerView.swift */,
+				31AA375F25BA1580001078EE /* InfoCard.swift */,
+				317989C825B94748003894E0 /* HomeView.swift */,
+				31AA375D25BA0FE7001078EE /* PillButton.swift */,
+				317989CB25B947F2003894E0 /* AccountHackView.swift */,
+				31AA373E25B9E1F1001078EE /* Paste.swift */,
+				317989CE25B947FD003894E0 /* PasswordHackView.swift */,
+				311B14E025B96E03005AA457 /* QueryManager.swift */,
+				311B14E925B97C63005AA457 /* FoundBreachesView.swift */,
+				31AA375925B9F104001078EE /* FoundPastesView.swift */,
+				31AA370525B99E07001078EE /* AllBreachesView.swift */,
+				311B14EC25B98150005AA457 /* BreachCard.swift */,
+				31AA375725B9EE19001078EE /* PasteCard.swift */,
+				311B14E325B97A56005AA457 /* Breach.swift */,
+				31AA375325B9E265001078EE /* Utils.swift */,
+				31AA373C25B9CF17001078EE /* PassHashResult.swift */,
+				31AA370925B9A264001078EE /* BreachView.swift */,
+				31AA376125BA1C79001078EE /* PasswordResultView.swift */,
+				31AA376325BA2299001078EE /* NetworkErrorView.swift */,
+				31AA373A25B9C455001078EE /* BackgroundBlurView.swift */,
+				31AA373425B9BD47001078EE /* AttributedLabelWrapper.swift */,
+				311B14E625B97B43005AA457 /* BreachCache.swift */,
+				31AA375525B9EA57001078EE /* PasteCache.swift */,
+				311B14EF25B98E2E005AA457 /* ImageCache.swift */,
+				311B14F225B993E4005AA457 /* ImageLoader.swift */,
+				311B14F525B9946E005AA457 /* URLImage.swift */,
 				317989B725B94712003894E0 /* Assets.xcassets */,
-				317989BC25B94712003894E0 /* Persistence.swift */,
 				317989C125B94712003894E0 /* Info.plist */,
 				317989BE25B94712003894E0 /* Pwny.xcdatamodeld */,
 				317989B925B94712003894E0 /* Preview Content */,
@@ -70,9 +223,32 @@
 		317989B925B94712003894E0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				31AA371425B9BC76001078EE /* Atributika.xcodeproj */,
 				317989BA25B94712003894E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31AA371525B9BC76001078EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31AA372025B9BC76001078EE /* Atributika.framework */,
+				31AA372225B9BC76001078EE /* Atributika.framework */,
+				31AA372425B9BC76001078EE /* Atributika.framework */,
+				31AA372625B9BC76001078EE /* Atributika.framework */,
+				31AA372825B9BC76001078EE /* Atributika-iOS Tests.xctest */,
+				31AA372A25B9BC76001078EE /* Atributika-macOS Tests.xctest */,
+				31AA372C25B9BC76001078EE /* Atributika-tvOS Tests.xctest */,
+				31AA372E25B9BC76001078EE /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31AA373025B9BCA6001078EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +261,7 @@
 				317989AC25B9470B003894E0 /* Sources */,
 				317989AD25B9470B003894E0 /* Frameworks */,
 				317989AE25B9470B003894E0 /* Resources */,
+				31AA373925B9BF64001078EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,12 +297,77 @@
 			mainGroup = 317989A725B9470B003894E0;
 			productRefGroup = 317989B125B9470B003894E0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 31AA371525B9BC76001078EE /* Products */;
+					ProjectRef = 31AA371425B9BC76001078EE /* Atributika.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				317989AF25B9470B003894E0 /* Pwny */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		31AA372025B9BC76001078EE /* Atributika.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Atributika.framework;
+			remoteRef = 31AA371F25B9BC76001078EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AA372225B9BC76001078EE /* Atributika.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Atributika.framework;
+			remoteRef = 31AA372125B9BC76001078EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AA372425B9BC76001078EE /* Atributika.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Atributika.framework;
+			remoteRef = 31AA372325B9BC76001078EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AA372625B9BC76001078EE /* Atributika.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Atributika.framework;
+			remoteRef = 31AA372525B9BC76001078EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AA372825B9BC76001078EE /* Atributika-iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Atributika-iOS Tests.xctest";
+			remoteRef = 31AA372725B9BC76001078EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AA372A25B9BC76001078EE /* Atributika-macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Atributika-macOS Tests.xctest";
+			remoteRef = 31AA372925B9BC76001078EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AA372C25B9BC76001078EE /* Atributika-tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Atributika-tvOS Tests.xctest";
+			remoteRef = 31AA372B25B9BC76001078EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AA372E25B9BC76001078EE /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = 31AA372D25B9BC76001078EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		317989AE25B9470B003894E0 /* Resources */ = {
@@ -144,10 +386,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				317989BD25B94712003894E0 /* Persistence.swift in Sources */,
-				317989B625B9470B003894E0 /* ContentView.swift in Sources */,
+				311B14F025B98E2E005AA457 /* ImageCache.swift in Sources */,
+				31AA375825B9EE19001078EE /* PasteCard.swift in Sources */,
+				31AA373B25B9C455001078EE /* BackgroundBlurView.swift in Sources */,
+				311B14E425B97A56005AA457 /* Breach.swift in Sources */,
+				31AA376225BA1C79001078EE /* PasswordResultView.swift in Sources */,
+				311B14E125B96E03005AA457 /* QueryManager.swift in Sources */,
+				31AA373D25B9CF17001078EE /* PassHashResult.swift in Sources */,
+				31AA375E25BA0FE7001078EE /* PillButton.swift in Sources */,
+				317989CC25B947F2003894E0 /* AccountHackView.swift in Sources */,
+				31AA373525B9BD47001078EE /* AttributedLabelWrapper.swift in Sources */,
+				317989CF25B947FD003894E0 /* PasswordHackView.swift in Sources */,
+				311B14F325B993E4005AA457 /* ImageLoader.swift in Sources */,
+				311B14E725B97B43005AA457 /* BreachCache.swift in Sources */,
+				311B14F625B9946F005AA457 /* URLImage.swift in Sources */,
+				31AA376025BA1580001078EE /* InfoCard.swift in Sources */,
+				311B14DE25B94E8D005AA457 /* RimmedRectButton.swift in Sources */,
 				317989B425B9470B003894E0 /* PwnyApp.swift in Sources */,
+				31AA376425BA2299001078EE /* NetworkErrorView.swift in Sources */,
+				311B14EA25B97C63005AA457 /* FoundBreachesView.swift in Sources */,
+				31AA375A25B9F104001078EE /* FoundPastesView.swift in Sources */,
+				31AA370625B99E08001078EE /* AllBreachesView.swift in Sources */,
+				317989C925B94748003894E0 /* HomeView.swift in Sources */,
+				311B14ED25B98150005AA457 /* BreachCard.swift in Sources */,
+				31AA375425B9E265001078EE /* Utils.swift in Sources */,
+				31AA375625B9EA57001078EE /* PasteCache.swift in Sources */,
 				317989C025B94712003894E0 /* Pwny.xcdatamodeld in Sources */,
+				31AA375C25BA0B8D001078EE /* ExplainerView.swift in Sources */,
+				31AA370A25B9A264001078EE /* BreachView.swift in Sources */,
+				31AA373F25B9E1F1001078EE /* Paste.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
