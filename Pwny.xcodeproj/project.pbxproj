@@ -40,6 +40,7 @@
 		31AA376425BA2299001078EE /* NetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA376325BA2299001078EE /* NetworkErrorView.swift */; };
 		31AA376D25BA3D8D001078EE /* APIKEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA376C25BA3D8D001078EE /* APIKEY.swift */; };
 		31AA377B25BA4244001078EE /* HIBPQueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA377A25BA4244001078EE /* HIBPQueryManager.swift */; };
+		31AA378125BAAB54001078EE /* HIBPAttributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AA378025BAAB54001078EE /* HIBPAttributionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		31AA376325BA2299001078EE /* NetworkErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorView.swift; sourceTree = "<group>"; };
 		31AA376C25BA3D8D001078EE /* APIKEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKEY.swift; sourceTree = "<group>"; };
 		31AA377A25BA4244001078EE /* HIBPQueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIBPQueryManager.swift; sourceTree = "<group>"; };
+		31AA378025BAAB54001078EE /* HIBPAttributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIBPAttributionView.swift; sourceTree = "<group>"; };
 		3D0D35C4143955738DCD3780 /* libPods-Pwny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pwny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71835F1FD677B3795D9F52C1 /* Pods-Pwny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pwny.release.xcconfig"; path = "Target Support Files/Pods-Pwny/Pods-Pwny.release.xcconfig"; sourceTree = "<group>"; };
 		F361E52F28192FF7F1D0EF06 /* Pods-Pwny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pwny.debug.xcconfig"; path = "Target Support Files/Pods-Pwny/Pods-Pwny.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				31AA375B25BA0B8D001078EE /* ExplainerView.swift */,
 				31AA375F25BA1580001078EE /* InfoCard.swift */,
 				317989C825B94748003894E0 /* HomeView.swift */,
+				31AA378025BAAB54001078EE /* HIBPAttributionView.swift */,
 				31AA375D25BA0FE7001078EE /* PillButton.swift */,
 				317989CB25B947F2003894E0 /* AccountHackView.swift */,
 				31AA373E25B9E1F1001078EE /* Paste.swift */,
@@ -439,6 +442,7 @@
 				311B14ED25B98150005AA457 /* BreachCard.swift in Sources */,
 				31AA375425B9E265001078EE /* Utils.swift in Sources */,
 				31AA375625B9EA57001078EE /* PasteCache.swift in Sources */,
+				31AA378125BAAB54001078EE /* HIBPAttributionView.swift in Sources */,
 				317989C025B94712003894E0 /* Pwny.xcdatamodeld in Sources */,
 				31AA375C25BA0B8D001078EE /* ExplainerView.swift in Sources */,
 				31AA370A25B9A264001078EE /* BreachView.swift in Sources */,

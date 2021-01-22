@@ -107,6 +107,6 @@ struct BreachView: View {
             
         }
         .padding(.horizontal)
-        .navigationTitle(breach.name)
+        .navigationTitle(breach.title ?? breach.name)
     }
 }

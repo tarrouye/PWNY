@@ -23,7 +23,7 @@ struct PasswordHackView: View {
     @State var isShowingResults : Bool = false
     
     func checkPassword() {
-        QueryManager.shared.checkPwnedPassword(self.textFieldInput) { error, hash, result in
+        HIBPQueryManager.shared.checkPwnedPassword(self.textFieldInput) { error, hash, result in
             self.foundError = error
             self.foundNumber = result
             self.foundHashPrefix = hash

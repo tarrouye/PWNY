@@ -18,7 +18,7 @@ struct AccountHackView: View {
     @State var error : Error? = nil
     
     func checkBreaches() {
-        QueryManager.shared.getAllBreachesForAccount(self.usernameFieldInput) { err in
+        HIBPQueryManager.shared.getAllBreachesForAccount(self.usernameFieldInput) { err in
             // on success, show results
             self.error = err
             self.showingBreachResults = true
@@ -26,7 +26,7 @@ struct AccountHackView: View {
     }
     
     func checkPastes() {
-        QueryManager.shared.getAllPastesForAccount(self.usernameFieldInput) { err in
+        HIBPQueryManager.shared.getAllPastesForAccount(self.usernameFieldInput) { err in
             // on success, show results
             self.error = err
             self.showingPasteResults = true

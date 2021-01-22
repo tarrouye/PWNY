@@ -1,5 +1,5 @@
 //
-//  QueryManager.swift
+//  HIBPQueryManager.swift
 //  Pwny
 //
 //  Created by Théo Arrouye on 1/21/21.
@@ -12,8 +12,8 @@ enum QueryError: Error {
     case input
 }
 
-class QueryManager {
-    static let shared = QueryManager()
+class HIBPQueryManager {
+    static let shared = HIBPQueryManager()
     
     private let user_agent = "Pwny iOS"
     private let api_key = API_KEY

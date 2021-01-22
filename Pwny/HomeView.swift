@@ -14,7 +14,7 @@ struct HomeView: View {
     @State var error : Error? = nil
     
     func loadAllBreaches() {
-        QueryManager.shared.getAllBreachInfo() { err in
+        HIBPQueryManager.shared.getAllBreachInfo() { err in
             self.error = err
             self.isShowingAllBreaches = true
         }
@@ -64,6 +64,10 @@ struct HomeView: View {
                     .buttonStyle(PlainButtonStyle())
                     .padding(.horizontal)
                 }
+                
+                    
+                HIBPAttributionView()
+                    .padding(.top)
             }
             .navigationTitle("PWNY")
             .toolbar {

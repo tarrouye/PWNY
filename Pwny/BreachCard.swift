@@ -32,7 +32,7 @@ struct BreachCard : View {
             // Info
             VStack(alignment: .leading) {
                 // Name
-                Text(breach.name)
+                Text(breach.title ?? breach.name)
                     .font(.title2)
                 
                 // Main date

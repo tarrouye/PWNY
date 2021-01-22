@@ -51,6 +51,14 @@ struct AllBreachesView: View {
                                 .buttonStyle(PlainButtonStyle())
                             }
                         }
+                        
+                        
+                        
+                        VStack {
+                            Spacer()
+                            
+                            HIBPAttributionView()
+                        }
                     }
                     .padding(.horizontal)
                 }

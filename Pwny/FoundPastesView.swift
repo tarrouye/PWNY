@@ -73,6 +73,9 @@ struct FoundPastesView: View {
                                 .buttonStyle(PlainButtonStyle())
                             }
                         }
+                        
+                        HIBPAttributionView()
+                            .padding(.top)
                     }
                     .padding(.horizontal)
                 }

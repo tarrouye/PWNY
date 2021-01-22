@@ -65,6 +65,12 @@ struct PasswordResultView: View {
             } else {
                 NetworkErrorView(error: self.$error)
             }
+            
+            VStack {
+                Spacer()
+                
+                HIBPAttributionView()
+            }
         }
         .navigationTitle("Results")
     }

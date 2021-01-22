@@ -13,7 +13,7 @@ struct ExplainerView: View {
     var cards : [InfoCard] = [
         InfoCard(
             title: "What is this app?",
-            msg: "Pwny serves as a simple, user-friendly wrapper for the HaveIBeenPwned API.\n\nIt allows you to check your usernames and e-mails against known breaches and pastes.\n\nIt also allows you to securely check if one of your passwords has been leaked in a known breach."
+            msg: "PWNY serves as a simple, user-friendly wrapper for the HaveIBeenPwned API.\n\nIt allows you to check your usernames and e-mails against known breaches and pastes.\n\nIt also allows you to securely check if one of your passwords has been leaked in a known breach."
         ),
         
         InfoCard(
@@ -48,6 +48,10 @@ struct ExplainerView: View {
                 
             }
             .padding(.horizontal)
+            
+            
+            HIBPAttributionView()
+                .padding(.top)
         }
         .navigationTitle("Help")
         .toolbar {
