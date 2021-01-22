@@ -98,6 +98,10 @@ struct BreachView: View {
                 }
                 
                 AttributedLabelWrapper(html: breach.description ?? "No description available for this breach.")
+                
+                
+                HIBPAttributionView()
+                    .padding(.top)
             }
             .padding()
             .background(Color(UIColor.secondarySystemBackground))
