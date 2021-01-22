@@ -10,7 +10,7 @@ import SwiftUI
 struct PasswordResultView: View {
     @Binding var hashPrefix : String
     @Binding var count : Int
-    @Binding var error : Error?
+    @Binding var error : QueryError?
     
     var body: some View {
         ZStack {

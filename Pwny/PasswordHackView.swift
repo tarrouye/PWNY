@@ -18,7 +18,7 @@ struct PasswordHackView: View {
     
     @State var foundNumber : Int = 0
     @State var foundHashPrefix : String = ""
-    @State var foundError : Error? = nil
+    @State var foundError : QueryError? = nil
     
     @State var isShowingResults : Bool = false
     

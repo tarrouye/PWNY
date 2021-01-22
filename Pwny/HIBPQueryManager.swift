@@ -10,6 +10,14 @@ import Foundation
 enum QueryError: Error {
     case url
     case input
+    case input_need_email
+    case network
+    case decode
+}
+
+struct NetworkStatus : Codable {
+    var statusCode : Int
+    var message : String
 }
 
 class HIBPQueryManager {
@@ -26,7 +34,7 @@ class HIBPQueryManager {
      domain              ?domain=adobe.com          Filters the result set to only breaches against the domain specified. It is possible that one site (and consequently domain), is compromised on multiple occasions.
     */
     
-    func getAllBreachesForAccount(_ account : String, _ completionHandler : @escaping (Error?) -> ()) {
+    func getAllBreachesForAccount(_ account : String, _ completionHandler : @escaping (QueryError?) -> ()) {
         // check cache first
         if BreachCache.shared.get(forKey: account) != nil {
             DispatchQueue.main.async {
@@ -59,7 +67,7 @@ class HIBPQueryManager {
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 if error != nil {
                     // handle error
-                    completionHandler(error)
+                    completionHandler(QueryError.network)
                     return
                 } else {
                     if (data != nil) {
@@ -70,16 +78,25 @@ class HIBPQueryManager {
                             DispatchQueue.main.async {
                                 BreachCache.shared.set(breaches, forKey: account)
                             
-                                completionHandler(error)
+                                completionHandler(nil)
                             }
                         } catch {
                             if let str = String(data: data!, encoding: .utf8), str.isEmpty {
                                 DispatchQueue.main.async {
                                     BreachCache.shared.set([], forKey: account)
-                                    completionHandler(error)
+                                    completionHandler(nil)
                                 }
                             } else {
-                               completionHandler(error)
+                                do {
+                                    let status = try JSONDecoder().decode(NetworkStatus.self, from: data! )
+                                    if (status.statusCode == 404) {
+                                        completionHandler(QueryError.input)
+                                    } else {
+                                        completionHandler(QueryError.network)
+                                    }
+                                } catch {
+                                    completionHandler(QueryError.decode)
+                                }
                             }
                         }
                     }
@@ -91,7 +108,7 @@ class HIBPQueryManager {
         }
     }
     
-    func getAllPastesForAccount(_ account : String, _ completionHandler : @escaping (Error?) -> ()) {
+    func getAllPastesForAccount(_ account : String, _ completionHandler : @escaping (QueryError?) -> ()) {
         // check cache first
         if PasteCache.shared.get(forKey: account) != nil {
             DispatchQueue.main.async {
@@ -119,7 +136,7 @@ class HIBPQueryManager {
             URLSession.shared.dataTask(with: request) { (data, response, error) in
                 if error != nil {
                     // handle error
-                    completionHandler(error)
+                    completionHandler(QueryError.network)
                     return
                 } else {
                     if (data != nil) {
@@ -130,16 +147,29 @@ class HIBPQueryManager {
                             DispatchQueue.main.async {
                                 PasteCache.shared.set(pastes, forKey: account)
                             
-                                completionHandler(error)
+                                completionHandler(nil)
                             }
                         } catch {
-                            if let str = String(data: data!, encoding: .utf8), str.isEmpty {
-                                DispatchQueue.main.async {
-                                    PasteCache.shared.set([], forKey: account)
-                                    completionHandler(error)
+                            if let str = String(data: data!, encoding: .utf8) {
+                                if (str.isEmpty) {
+                                    DispatchQueue.main.async {
+                                        PasteCache.shared.set([], forKey: account)
+                                        completionHandler(nil)
+                                    }
+                                } else if (str == "\"Invalid email address\"") {
+                                    completionHandler(QueryError.input_need_email)
                                 }
                             } else {
-                                completionHandler(error)
+                                do {
+                                    let status = try JSONDecoder().decode(NetworkStatus.self, from: data! )
+                                    if (status.statusCode == 404) {
+                                        completionHandler(QueryError.input)
+                                    } else {
+                                        completionHandler(QueryError.network)
+                                    }
+                                } catch {
+                                    completionHandler(QueryError.decode)
+                                }
                             }
                         }
                     }
@@ -151,7 +181,7 @@ class HIBPQueryManager {
         }
     }
     
-    func checkPwnedPassword(_ pass : String, _ completionHandler : @escaping (Error?, String, Int) -> ()) {
+    func checkPwnedPassword(_ pass : String, _ completionHandler : @escaping (QueryError?, String, Int) -> ()) {
         // (1) Hash password with SHA-1
         let sha = pass.sha1.hexString.uppercased()
         
@@ -164,7 +194,7 @@ class HIBPQueryManager {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if error != nil {
                     // handle error
-                    completionHandler(error, String(prefix), 0)
+                    completionHandler(QueryError.network, String(prefix), 0)
                     return
                 } else {
                     if (data != nil) {
@@ -179,7 +209,7 @@ class HIBPQueryManager {
                                 if (suffix.compare(pieces[0]) == .orderedSame) {
                                     // found the users password in the database
                                     DispatchQueue.main.async {
-                                        completionHandler(error, String(prefix), Int(pieces[1]) ?? 0)
+                                        completionHandler(nil, String(prefix), Int(pieces[1]) ?? 0)
                                     }
                                     return
                                 }
@@ -187,7 +217,21 @@ class HIBPQueryManager {
                             
                             // we went through the data and the password wasnt found
                             DispatchQueue.main.async {
-                                completionHandler(error, String(prefix), 0)
+                                completionHandler(nil, String(prefix), 0)
+                            }
+                        } else {
+                            do {
+                                let status = try JSONDecoder().decode(NetworkStatus.self, from: data! )
+                                print(status.statusCode)
+                                print(status.message)
+                                
+                                if (status.statusCode == 404) {
+                                    completionHandler(QueryError.input, String(prefix), 0)
+                                } else {
+                                    completionHandler(QueryError.network, String(prefix), 0)
+                                }
+                            } catch {
+                                completionHandler(QueryError.decode, String(prefix), 0)
                             }
                         }
                     }
@@ -199,7 +243,7 @@ class HIBPQueryManager {
         }
     }
     
-    func getAllBreachInfo(_ completionHandler : @escaping (Error?) -> ()) {
+    func getAllBreachInfo(_ completionHandler : @escaping (QueryError?) -> ()) {
         // check cache first
         if BreachCache.shared.get(forKey: "all") != nil {
             DispatchQueue.main.async {
@@ -213,8 +257,7 @@ class HIBPQueryManager {
         if let url = URL(string: "https://haveibeenpwned.com/api/v3/breaches") {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    // handle error
-                    completionHandler(error)
+                    completionHandler(QueryError.network)
                     return
                 } else {
                     if (data != nil) {
@@ -225,10 +268,10 @@ class HIBPQueryManager {
                             DispatchQueue.main.async {
                                 BreachCache.shared.set(breaches, forKey: "all")
                             
-                                completionHandler(error)
+                                completionHandler(nil)
                             }
                         } catch {
-                            completionHandler(error)
+                            completionHandler(QueryError.decode)
                         }
                     }
                 }

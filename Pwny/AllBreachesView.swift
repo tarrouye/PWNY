@@ -12,7 +12,7 @@ import SwiftUI
 struct AllBreachesView: View {
     @State var breaches : [Breach] = []
     
-    @Binding var error : Error?
+    @Binding var error : QueryError?
     
     typealias SortDescriptor<Breach> = (Breach, Breach) -> Bool
     let breachSorter : SortDescriptor<Breach> = {

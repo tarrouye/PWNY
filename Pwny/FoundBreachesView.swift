@@ -10,7 +10,7 @@ import SwiftUI
 struct FoundBreachesView: View {
     var key : String
     
-    @Binding var error: Error?
+    @Binding var error: QueryError?
     
     @State var breaches : [Breach] = []
     

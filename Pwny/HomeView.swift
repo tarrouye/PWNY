@@ -11,7 +11,7 @@ struct HomeView: View {
     @State var isShowingAllBreaches : Bool = false
     @State var isShowingHelp : Bool = false
     
-    @State var error : Error? = nil
+    @State var error : QueryError? = nil
     
     func loadAllBreaches() {
         HIBPQueryManager.shared.getAllBreachInfo() { err in
