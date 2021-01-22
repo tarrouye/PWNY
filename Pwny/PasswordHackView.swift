@@ -56,7 +56,9 @@ struct PasswordHackView: View {
                     
                     Text("Password Check")
                         .font(.title).fontWeight(.semibold)
-                        .lineLimit(1)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.leading)
+                        .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 2)
                     
                     Spacer()

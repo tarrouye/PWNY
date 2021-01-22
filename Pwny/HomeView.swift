@@ -65,7 +65,7 @@ struct HomeView: View {
                     .padding(.horizontal)
                 }
             }
-            .navigationTitle("Pwny")
+            .navigationTitle("PWNY")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     PillButton(label: "Help") {

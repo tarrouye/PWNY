@@ -52,8 +52,10 @@ struct ExplainerView: View {
         .navigationTitle("Help")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                PillButton(label: "Done") {
-                    self.presentationMode.wrappedValue.dismiss()
+                if (UIDevice.current.userInterfaceIdiom == .phone) {
+                    PillButton(label: "Done") {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
                 }
             }
         }
