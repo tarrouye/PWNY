@@ -4,7 +4,7 @@
 
 With PWNY, you can easily find out if one of your passwords or usernames has leaked in a known data breach. Early knowledge is crucial to quickly locking your accounts back down and mitigating damage potential.
 
-If you want to see pretty pictures and learn about how it was made, read on. If you just want to play with fun code, hop right in 😊. 
+If you want to see pretty pictures and learn about how it was made, read on. If you just want to play with the code, hop right in 😊. 
 
 PWNY is built mostly as a practice exercise, but the app is fully functional if an API key is provided. It supports the following features:
 
