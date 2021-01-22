@@ -41,6 +41,7 @@ The only dependency is the incredible [Atributika](https://github.com/psharanda/
 The Podfile is included in the repository so all you should need to do is 
 
 > cd /path/to/repo
+>
 > pod install
 
 The only other potential 'gotcha' is that without a paid API key, only viewing all breaches will work. 
