@@ -53,4 +53,6 @@ The only other potential 'gotcha' is that without a paid API key, only viewing a
  - `HIBPQueryManager`, or HaveIBeenPwnedQueryManager, which handles fetching data from the HIBP API. Note that to make full use of this you will need an API Key stored in a global variable somewhere called `API_KEY`. 
 
 ## License
-You may take any of the code found within this repository and do whatever you wish with it. Take the app, plug in your own API key, and sell it on the App Store as is, for all I care 😊 When the opportunity presents itself, please give back to the community! 
+You may take any of the code found within this repository and do whatever you wish with it. Take the app, plug in your own API key, and sell it on the App Store as is, for all I care 😊 
+
+When the opportunity presents itself, please give back to the community! 
