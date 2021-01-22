@@ -53,7 +53,7 @@ The only other potential 'gotcha' is that without a paid API key, only viewing a
  - `HIBPQueryManager`, or HaveIBeenPwnedQueryManager, which handles fetching data from the HIBP API. Note that to make full use of this you will need an API Key stored in a global variable somewhere called `API_KEY`. 
  
 ## Feedback
-If you have any feedback about the code or want to contribute, please open a Pull Request, an Issue, or shoot me an e-mail. This is only my second SwiftUI application and I'm always open to constructive criticism. 
+If you have any feedback about the code or want to contribute, please open a Pull Request, an Issue, or shoot me an e-mail. This is one of my first SwiftUI applications and I'm always open to constructive criticism. 
 
 ## License
 You may take any of the code found within this repository and do whatever you wish with it. Take the app, plug in your own API key, and sell it on the App Store as is, for all I care 😊 
