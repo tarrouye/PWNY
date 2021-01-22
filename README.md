@@ -1,12 +1,12 @@
-# Pwny (/ˈpōnē/) 
+# PWNY (/ˈpōnē/) 
 
-**Pwny** is an iOS app to interface with the [HaveIBeenPwned (HIBP) API](https://haveibeenpwned.com/API/v3) 
+**PWNY** is an iOS app to interface with the [HaveIBeenPwned (HIBP) API](https://haveibeenpwned.com/API/v3) 
 
-With Pwny, you can easily find out if one of your passwords or usernames has leaked in a known data breach. Early knowledge is crucial to quickly locking your accounts back down and mitigating damage potential.
+With PWNY, you can easily find out if one of your passwords or usernames has leaked in a known data breach. Early knowledge is crucial to quickly locking your accounts back down and mitigating damage potential.
 
 If you want to see pretty pictures and learn about how it was made, read on. If you just want to play with fun code, hop right in 😊. 
 
-Pwny is built mostly as a practice exercise, but the app is fully functional if an API key is provided. It supports the following features:
+PWNY is built mostly as a practice exercise, but the app is fully functional if an API key is provided. It supports the following features:
 
 - Check an e-mail or username against the database of breaches
 - Check an e-mail against the database of pastes
@@ -32,7 +32,7 @@ Check Account against Breaches |  Check Account against Pastes | Check Password 
 
 ## Tech stack
 
-Pwny is built with Swift 5 and SwiftUI 2.0
+PWNY is built with Swift 5 and SwiftUI 2.0
 
 ## Dependencies
 
