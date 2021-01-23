@@ -20,14 +20,14 @@ PWNY is built mostly as a practice exercise, but the app is fully functional if 
 
 Home Screen         |  Expanded Home 1 | Expanded Home 2 | All Breaches
 :-------------------------:|:-------------------------:|:-------------------------:|:------------------------:
-![Pwny Home Screen](https://tarrouye.net/portfolio/assets/pwny/main_screen.PNG)  |  ![Pwny Expanded Home](https://tarrouye.net/portfolio/assets/pwny/main_expanded_1.PNG) | ![Pwny Expanded Home 2](https://tarrouye.net/portfolio/assets/pwny/main_expanded_2.PNG) | ![Pwny All Breaches View](https://tarrouye.net/portfolio/assets/pwny/all_breaches.PNG)
+![Pwny Home Screen](https://tarrouye.net/ios/pwny/assets/main_screen.png)  |  ![Pwny Expanded Home](https://tarrouye.net/ios/pwny/assets/main_expanded_1.png) | ![Pwny Expanded Home 2](https://tarrouye.net/ios/pwny/assets/main_expanded_2.png) | ![Pwny All Breaches View](https://tarrouye.net/ios/pwny/assets/all_breaches.png)
 
 
 
 
 Check Account against Breaches |  Check Account against Pastes | Check Password | Breach Details
 :-------------------------:|:-------------------------:|:-------------------------:|:---------------:
-![Pwny Breach Check Results](https://tarrouye.net/portfolio/assets/pwny/breach_check_results.PNG)  |  ![Pwny Pastes Check Results](https://tarrouye.net/portfolio/assets/pwny/paste_check_result.PNG) | ![Pwny Password Check Results](https://tarrouye.net/portfolio/assets/pwny/password_check_result.PNG) | ![Pwny Breach Details](https://tarrouye.net/portfolio/assets/pwny/breach_details.PNG)
+![Pwny Breach Check Results](https://tarrouye.net/ios/pwny/assets/breach_check_results.png)  |  ![Pwny Pastes Check Results](https://tarrouye.net/ios/pwny/assets/paste_check_result.png) | ![Pwny Password Check Results](https://tarrouye.net/ios/pwny/assets/password_check_result.png) | ![Pwny Breach Details](https://tarrouye.net/ios/pwny/assets/breach_details.png)
 
 
 ## Tech stack
