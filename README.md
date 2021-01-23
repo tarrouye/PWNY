@@ -4,7 +4,7 @@
 
 With PWNY, you can easily find out if one of your passwords or usernames has leaked in a known data breach. Early knowledge is crucial to quickly locking your accounts back down and mitigating damage potential.
 
-If you want to see pretty pictures and learn about how it was made, read on. If you just want to play with fun code, hop right in 😊. 
+If you want to see pretty pictures and learn about how it was made, read on. If you just want to play with the code, hop right in 😊. 
 
 PWNY is built mostly as a practice exercise, but the app is fully functional if an API key is provided. It supports the following features:
 
@@ -51,6 +51,9 @@ The only other potential 'gotcha' is that without a paid API key, only viewing a
  - `URLImage`, a SwiftUI `View` that takes a `URL` and placeholder `View`. It asynchronously loads the image from the URL and displays the placeholder view while waiting. 
  - `BackgroundBlurView`, a SwiftUI `View` to be used in .background() modifier or under views to provide the native frosted glass effect. Simply wraps a `UIVisualEffectView` with `UIBlurEffect` thin style.
  - `HIBPQueryManager`, or HaveIBeenPwnedQueryManager, which handles fetching data from the HIBP API. Note that to make full use of this you will need an API Key stored in a global variable somewhere called `API_KEY`. 
+ 
+## Feedback
+If you have any feedback about the code or want to contribute, please open a Pull Request, an Issue, or shoot me an e-mail. This is one of my first SwiftUI applications and I'm always open to constructive criticism. 
 
 ## License
 You may take any of the code found within this repository and do whatever you wish with it. Take the app, plug in your own API key, and sell it on the App Store as is, for all I care 😊 
